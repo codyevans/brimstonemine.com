@@ -1,0 +1,3 @@
+
+$('.subnav-contain a').smoothScroll();
+

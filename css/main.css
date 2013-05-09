@@ -1,0 +1,1007 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b0be68;
+    color: white;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b0be68;
+    color: white;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+  Simple Grid
+  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - dallasbass.com
+*/
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+[class*='col-'] {
+    float: left;
+    padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+    padding-right: 0px;
+}
+
+.grid {
+    width: 90%;
+    min-height: 100%;
+    max-width: 1206px;
+    margin: 0px auto;
+    margin-bottom: 75px;
+    overflow: hidden;
+}
+
+.grid-template {
+    width: 100%;
+    max-width: 1325px;
+    margin: 0 0 150px 0px;
+    padding: 0 60px 0 300px;
+    overflow: hidden;
+}
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid-template:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid-pad {
+    padding: 20px 0 0px 20px;
+}
+
+.grid-pad > [class*='col-']:last-of-type {
+    padding-right: 20px;
+}
+
+.push-right {
+    float: right;
+}
+
+/* Content Columns */
+
+.col-1-1 {
+    width: 100%;
+}
+.col-2-3, .col-8-12 {
+    width: 66.66%;
+}
+
+.col-1-2, .col-6-12 {
+    width: 50%;
+}
+
+.col-1-3, .col-4-12 {
+    width: 33.33%;
+}
+
+.col-1-4, .col-3-12 {
+    width: 25%;
+}
+
+.col-3-4 {
+    width: 75%;
+}
+
+.col-1-5 {
+    width: 20%;
+}
+
+.col-1-6, .col-2-12 {
+    width: 16.667%;
+}
+
+.col-1-7 {
+    width: 14.28%;
+}
+
+.col-1-8 {
+    width: 12.5%;
+}
+
+.col-1-9 {
+    width: 11.1%;
+}
+
+.col-1-10 {
+    width: 10%;
+}
+
+.col-1-11 {
+    width: 9.09%;
+}
+
+.col-1-12 {
+    width: 8.33%
+}
+
+/* Layout Columns */
+
+.col-11-12 {
+    width: 91.66%
+}
+
+.col-10-12 {
+    width: 83.333%;
+}
+
+.col-9-12 {
+    width: 75%;
+}
+
+.col-5-12 {
+    width: 41.66%;
+}
+
+.col-7-12 {
+    width: 58.33%
+}
+
+/* General ======================================================== */
+
+html, body {
+    height: 100%;
+    background: #f0f0ed;
+    font-family: 'Droid Serif', serif;
+    color: #1a2625;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Droid Sans', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Top Nav  =========================================================== */
+
+header.top-header {
+    position: fixed;
+    background: #1a2625;
+    border-bottom: 5px solid #afc064;
+    height: 60px;
+    width: 100%;
+    z-index: 200;
+}
+
+header.top-header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header.top-header .logo {
+    width: 60px;
+    height: 100%;
+    background:  #afc064 url(../img/bkgd/logo.gif) no-repeat center center;
+    float: left;
+    margin-right: 15px;
+}
+
+header.top-header a {
+    text-decoration: none;
+    font-family: 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #f0f1ed;
+    line-height: 55px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+header.top-header a:hover {
+    color: #afc064;
+}
+
+header.top-header a.active {
+    color: #afc064;
+}
+
+header.top-header .home {
+    float: left;
+}
+
+header.top-header nav {
+    float: right;
+}
+
+header.top-header nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header.top-header nav ul li {
+    float: left;
+    margin-right: 25px;
+}
+
+/* footer =================================================================== */
+
+footer {
+    background: white;
+    width: 100%;
+    height: 70px;
+    border-bottom: 10px solid #f0f0ed;
+}
+
+footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer .copyright {
+    float: left;
+    margin-left: 25px
+}
+
+footer .copyright p {
+    font-family: 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 70px;
+    margin: 0;
+    color: #a0a0a0;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #a0a0a0;
+    line-height: 70px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #afc064;
+}
+
+footer nav {
+    float: right;
+}
+
+footer nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer nav ul li {
+    float: left;
+    margin-right: 25px;
+}
+
+/* home ===================================================================== */
+
+.footer-push {
+    padding-bottom: 70px
+}
+
+footer.sticky { 
+    position: relative;
+    margin-top: -70px;
+    height: 70px;
+    clear: both;
+}
+
+.main-links {
+
+}
+
+.main-links:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-links a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 110px;
+    width: 32%;
+    height: 110px;
+    border-radius: 3px;
+    background: #1a2625;
+    color: #f0f1ed;
+    margin-right: 1.5%;
+    border: 1px solid rgba(0,0,0,0.2);
+
+    -webkit-transition: background 0.2s;
+            transition: background 0.2s;
+}
+
+.main-links a:last-of-type {
+    margin-right: 0px;
+}
+
+.main-links a:hover {
+    background: #afc064;
+}
+
+/* hero ===================================================================== */
+
+.hero {
+    margin-top: 78px;
+    margin-bottom: 25px;
+}
+
+.hero-contain {
+    background: #afc064;
+    text-align: center;
+    color: #f0f1ed;
+    border-radius: 3px; 
+}
+
+.hero-slider {
+    margin-top: 78px;
+    margin-bottom: 25px;
+}
+
+.hero-slider-contain {
+    border-radius: 3px;
+    border: 5px solid #afc064;
+}
+
+.hero-contain h1 {
+    padding: 15px 0;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+/* descriptions ========================================================== */
+
+.description {
+    padding: 25px 30px;
+    background: white;
+    color: #a0a0a0;
+    text-align: left;
+    font-style: italic;
+}
+
+.description p {
+    margin: 0;
+}
+
+.description a {
+    color: #afc064;
+}
+
+.description a:hover {
+    text-decoration: none;
+}
+
+/* subnav =================================================================== */
+
+.subnav-contain {
+    position: fixed;
+    top: 77px;
+    left: 60px;
+    width: 220px;
+    background: #1a2525;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+.subnav-contain > header {
+    background: url(../img/bkgd/shovel-axe.jpg) no-repeat 79px 14px;
+    width: 220px;
+    height: 80px;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+}
+
+.subnav-contain a.subnav {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 15px;
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+   -webkit-transition: background 0.1s;
+    transition: background 0.1s;
+}
+
+.subnav-contain a.subnav:last-of-type {
+    border-bottom: none;
+}
+
+.subnav-section {
+    text-align: center;
+}
+
+.subnav-contain a.subnav p {
+    font-family: 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 0px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #a0a0a0;
+     -webkit-transition: color .1s;
+     transition: color .1s;
+}
+
+a.subnav:hover {
+    background: #afc064;
+}
+
+a.subnav:hover p {
+     color: #f0f1ed;
+}
+
+
+/* Contained stuff ========================================================== */
+
+.contained {
+    background: white;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.contained:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contained img {
+    width: 255px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.contained img + p {
+    margin-left: 275px;
+}
+
+.contained h4 {
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+.contained span {
+     color: #afc064;
+}
+
+.contained ul {
+    list-style: none;
+    line-height: 30px;
+    font-size: 15px;
+    margin-left: 0px;
+    padding-left: 0px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.contained ul li {
+     background: #f0f0ed;
+     padding: 10px 0 10px 15px;
+     border-left: 5px solid #afc064;
+}
+
+.contained ul li:nth-child(even) {
+    background: white;
+}
+
+.contained ul li.list-head {
+    background: #afc064;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.contained ul li a {
+    color: #1a2625;
+}
+
+.contained ul li a:hover {
+    text-decoration: none;
+}
+
+.contained a.download {
+    text-decoration: none;
+    font-family: 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0f0ed;
+    color: #1a2625;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.contained a.download:hover {
+    background: #afc064;
+    color: white;
+}
+
+/* Tables  ========================================================================= */
+
+table {
+    width: 100%;
+    border: 1px solid #1a2525;
+}
+
+th {
+    font-family: 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    background: #afc064;
+    color: #f0f1ed;
+    border: 1px solid #1a2525;
+}
+
+th.start {
+    border-left: 1px solid #1a2525;
+}
+
+th.end {
+    border-right: 1px solid #1a2525;
+}
+
+td {
+    text-align: center;
+    background: #f0f0ed;
+    padding: 12px 0;
+    font-size: 14px;
+    border: 1px solid #1a2525;
+}
+
+td span {
+    color: #afc064;
+}
+
+tr:nth-child(odd) td {
+    background: white;
+}
+
+table#drillhole th {
+    font-size: 11px;
+    padding: 20px 0;
+}
+
+table#drillhole td {
+    font-size: 10px;
+}
+
+/* mobile overlay =================================================================== */
+
+ #mobilOverlay {
+        display: none;
+    }
+
+/* slider =================================================================== */
+
+/* Demo */
+.wmuSlider,
+.wmuGallery {
+    margin-top: 78px;
+    margin-bottom: 25px;
+    /*border: 10px solid #afc064;*/
+}
+
+/*.img-border {
+    border: 20px solid #afc064;
+}*/
+
+/* mwuSlider */
+.wmuSlider {
+    position: relative;
+    overflow: hidden;
+}
+.wmuSlider .wmuSliderWrapper {
+    display: none;
+}
+.wmuSlider .wmuSliderWrapper article {
+    position: relative;
+    text-align: center;
+}
+.wmuSlider .wmuSliderWrapper article img {
+    max-width: 100%;
+    
+}
+
+/* mwuGallery */
+.wmuGallery .wmuGalleryImage {
+    position: relative;
+    text-align: center;
+}
+.wmuGallery .wmuGalleryImage img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Default Skin */
+.wmuGallery .wmuGalleryImage {
+    margin-bottom: 10px;
+}
+
+.wmuSliderPrev {
+    background-position: 100% 0;
+    left: 20px;
+}
+.wmuSliderNext {
+    right: 20px;
+}
+.wmuSliderPagination {
+    z-index: 2;
+    position: absolute;
+    left: -8px;
+    bottom: -8px;
+}
+.wmuSliderPagination li {
+    float: left;
+    margin: 0 5px 0 0;
+    list-style-type: none;
+}
+.wmuSliderPagination a {
+    display: block;
+    text-indent: -9999px;
+    width: 8px;
+    height: 8px;
+   /* background: url(../img/sprites.png) no-repeat 0 -80px;*/ 
+   background: #1a2525;
+   border-radius: 50%;
+}
+.wmuSliderPagination a.wmuActive {
+    background: #afc064;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media handheld, only screen and (max-width: 876px) {
+    
+    /*[class*='col-'] {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    header.top-header {
+        position: relative;
+    }*/
+
+    #mobilOverlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        background: #afc064;
+        z-index: 1000;
+    }
+
+    #mobilOverlay .mobileContain {
+        margin-top: 50px;
+        background: white;
+        padding: 25px 30px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        border: 1px solid rgba(0,0,0,0.2);
+    }
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
