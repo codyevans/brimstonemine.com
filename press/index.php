@@ -1,47 +1,15 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Press | Brimstone Mining, Inc.</title>
-        <meta name="description" content="">
-       <!--  <meta name="viewport" content="width=device-width"> -->
+<?php 
+    // title tag
+    $title = 'Press Releases | Brimstone Mining, Inc.';
+?>
+<?php include '../parts/_doctype.php'; ?>
 
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
-
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
- 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
+    <body id="press-page">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class="top-header">
-            <div class="logo"></div>
-            <div class="home">
-                <a href="/" title="home">brimstone Mining</a>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/mayflower-mine/">Mayflower Mine</a>
-                    </li>
-                    <li>
-                        <a href="/maps/">Maps</a>
-                    </li>
-                    <li>
-                        <a href="/press/" class="active">Press</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <?php include '../parts/_main-nav.php'; ?>
 
         <div class="subnav-contain">
             <header></header>
@@ -908,47 +876,4 @@
             </div>
         </div> <!-- /grid -->
 
-        <footer>
-
-            <div class="logo"></div>
-            <div class="copyright">
-                <p>©2013 brimstone Mining, Inc.</p>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/mayflower-mine/">Mayflower Mine</a>
-                    </li>
-                    <li>
-                        <a href="/maps/">Maps</a>
-                    </li>
-                    <li>
-                        <a href="/press/">Press</a>
-                    </li>
-                </ul>
-            </nav>
-       
-        </footer>
-
-
-        <div id="mobilOverlay">
-            <div class="grid">
-            <div class="col-1-1">
-            <div class="mobileContain">
-                <h2>Coming Soon</h2>
-                <hr>
-                <p>
-                    We are working hard to bring you a better mobile viewing experience.
-                    Please check back with us soon.
-                </p>
-            </div>
-            </div>
-            </div>
-        </div>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-    </body>
-</html>
+       <?php include '../parts/_footer.php'; ?>
