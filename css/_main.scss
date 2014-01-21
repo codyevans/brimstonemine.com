@@ -124,7 +124,7 @@ body {
 
 .grid {
     width: 90%;
-    min-height: 100%;
+    height: 100%;
     max-width: 1206px;
     margin: 0px auto;
     margin-bottom: 75px;
@@ -259,6 +259,10 @@ html, body {
     color: #1a2625;
 }
 
+body#home-page {
+    background: none;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Droid Sans', sans-serif;
     margin: 0;
@@ -283,6 +287,11 @@ header.top-header {
     height: 60px;
     width: 100%;
     z-index: 200;
+
+    #home-page & {
+        border-bottom: none;
+        box-shadow: 0 1px 5px rgba(black, 0.1);
+    }
 }
 
 header.top-header:after {
@@ -401,21 +410,6 @@ footer nav ul li {
 
 /* home ===================================================================== */
 
-.footer-push {
-    padding-bottom: 70px
-}
-
-footer.sticky { 
-    position: relative;
-    margin-top: -70px;
-    height: 70px;
-    clear: both;
-}
-
-.main-links {
-
-}
-
 .main-links:after {
     content: "";
     display: table;
@@ -434,10 +428,11 @@ footer.sticky {
     width: 32%;
     height: 110px;
     border-radius: 3px;
-    background: #1a2625;
+    //background: #1a2625;
     color: #f0f1ed;
     margin-right: 1.5%;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 2px solid #f0f1ed;;
+    //opacity: 0.8;
 
     -webkit-transition: background 0.2s;
             transition: background 0.2s;
@@ -449,6 +444,11 @@ footer.sticky {
 
 .main-links a:hover {
     background: #afc064;
+     opacity: 1;
+}
+
+#home-page h2 {
+    font-size: 1.3em;
 }
 
 /* terms ===================================================================== */
@@ -592,8 +592,10 @@ a.subnav:hover p {
     border-radius: 3px;
     border: 1px solid rgba(0,0,0,0.2);
 
-    #contact-page & {
-        margin-top: 77px;
+    #contact-page &,
+    #home-page & {
+        margin-top: 78px;
+        background: rgba(white, 0.8);
     }
 }
 
@@ -771,81 +773,6 @@ table#drillhole td {
 
 /* slider =================================================================== */
 
-/* Demo */
-.wmuSlider,
-.wmuGallery {
-    margin-top: 78px;
-    margin-bottom: 25px;
-    /*border: 10px solid #afc064;*/
-}
-
-/*.img-border {
-    border: 20px solid #afc064;
-}*/
-
-/* mwuSlider */
-.wmuSlider {
-    position: relative;
-    overflow: hidden;
-}
-.wmuSlider .wmuSliderWrapper {
-    display: none;
-}
-.wmuSlider .wmuSliderWrapper article {
-    position: relative;
-    text-align: center;
-}
-.wmuSlider .wmuSliderWrapper article img {
-    max-width: 100%;
-    
-}
-
-/* mwuGallery */
-.wmuGallery .wmuGalleryImage {
-    position: relative;
-    text-align: center;
-}
-.wmuGallery .wmuGalleryImage img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-}
-
-/* Default Skin */
-.wmuGallery .wmuGalleryImage {
-    margin-bottom: 10px;
-}
-
-.wmuSliderPrev {
-    background-position: 100% 0;
-    left: 20px;
-}
-.wmuSliderNext {
-    right: 20px;
-}
-.wmuSliderPagination {
-    z-index: 2;
-    position: absolute;
-    left: -8px;
-    bottom: -8px;
-}
-.wmuSliderPagination li {
-    float: left;
-    margin: 0 5px 0 0;
-    list-style-type: none;
-}
-.wmuSliderPagination a {
-    display: block;
-    text-indent: -9999px;
-    width: 8px;
-    height: 8px;
-   /* background: url(../img/sprites.png) no-repeat 0 -80px;*/ 
-   background: #1a2525;
-   border-radius: 50%;
-}
-.wmuSliderPagination a.wmuActive {
-    background: #afc064;
-}
 
 /* ==========================================================================
    Helper classes
