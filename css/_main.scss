@@ -309,12 +309,24 @@ header.top-header:after {
     clear: both;
 }
 
+// header.top-header .logo {
+//     width: 60px;
+//     height: 100%;
+//     background:  #afc064 url(/img/bkgd/logo.gif) no-repeat center center;
+//     float: left;
+//     margin-right: 15px;
+// }
+
 header.top-header .logo {
     width: 60px;
     height: 100%;
-    background:  #afc064 url(/img/bkgd/logo.gif) no-repeat center center;
+    background:  #afc064 url(/img/bkgd/Brimstone-Logo.svg) no-repeat center center;
     float: left;
     margin-right: 15px;
+}
+
+.no-svg header.top-header .logo {
+    background:  #afc064 url(/img/bkgd/Brimstone-Logo.png) no-repeat center center;
 }
 
 header.top-header a {

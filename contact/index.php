@@ -30,10 +30,8 @@
                        Whitehall MT 59759
                     </address>
                 </div>
-
             </div> <!-- /col -->
         </div> <!-- /grid -->
-
        
         
 <?php include '../parts/_footer.php'; ?>

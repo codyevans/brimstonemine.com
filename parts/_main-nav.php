@@ -1,7 +1,7 @@
         <header class="top-header">
             <div class="logo"></div>
             <h1 class="home">
-                <a href="/home/" title="home">brimstone Mining, Inc.</a>
+                <a href="/home/" id="home-link" title="home">brimstone Mining, Inc.</a>
             </h1>
             <nav>
                 <ul>

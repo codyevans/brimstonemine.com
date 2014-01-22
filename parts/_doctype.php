@@ -15,4 +15,6 @@
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
+        <script src="/js/vendor/modernizr.custom.js"></script>
+
     </head>
