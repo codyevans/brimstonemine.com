@@ -255,6 +255,7 @@ body {
 html, body {
     height: 100%;
     background: #f0f0ed;
+    min-height: 660px;
     font-family: 'Droid Serif', serif;
     color: #1a2625;
 }
@@ -595,7 +596,12 @@ a.subnav:hover p {
     #contact-page &,
     #home-page & {
         margin-top: 78px;
-        background: rgba(white, 0.8);
+        background: rgba(white, 0.85);
+    }
+
+    #home-page & {
+        border: none;
+        box-shadow: 0 0 8px rgba(black, 0.2); 
     }
 }
 
@@ -687,7 +693,7 @@ a.subnav:hover p {
 
 /* Contact Page =================================================================== */
 
-#contact-page {
+#contact-page, #home-page {
 
     .contained h3 {
         
@@ -712,6 +718,33 @@ a.subnav:hover p {
     }
 
 } // end contact-page
+
+// home page contact info adjustments
+#home-page {
+
+    .contained h3 {
+        font-size: 16px;
+        font-weight: 400;
+
+        span {
+            color: inherit;
+            letter-spacing: 1px;
+        }
+    }
+
+    .contained h4 {
+        text-align: left;
+        margin: 15px 0 5px;
+    }
+
+    address {
+        font-family: 'Droid Serif', serif;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+}
 
 
 /* Tables  ========================================================================= */

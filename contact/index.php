@@ -12,12 +12,12 @@
         <?php include '../parts/_main-nav.php'; ?>
 
         <div class="grid footer-push">
-            <div class="col-1-1">
+            <div class="col-1-2">
                    
                  <div class="contained">
                     <h2>Contact Us</h2>
                     <hr>
-                    <h3>Brimstone Office:<span tel="406-287-8080"> 406-287-8080</span></h3>
+                    <h3><strong>Brimstone Office:</strong><span tel="406-287-8080"> 406-287-8080</span></h3>
                     <h4>Physical Address:</h4>
                     <address>
                         375 Mayflower Mine Road <br> 

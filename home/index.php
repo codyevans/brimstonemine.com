@@ -11,25 +11,34 @@
 
         <?php include '../parts/_main-nav.php'; ?>
 
-         <div class="grid">
-            <div class="col-1-3 push-right">
+         <div class="grid grid-pad">
+            <div class="col-1-2 push-right">
                    
                  <div class="contained">
                     <h2>Brimstone Mining, Inc.</h2>
-                 <!-- // INFO BUTTON FOR QUICK CONTACT - STILL NEEDS WORK
-                    <a href="#0" class="quick-contact" id="quick-contact" title="contact info">i</a> 
-                -->
                     <hr>
                     <p>
                         <strong>Brimstone Mining, Inc.</strong> (BMI) is a Montana Corporation formed in January 1996. The Company was formed specifically to acquire the Mayflower Mine and associated assets. Some of the claims and all of the equipment and supplies at the Mayflower are owned directly by BMI. The rest of the claims are owned by West Mayflower Mining Co. and Mayflower Mining Co. which are both Montana corporations formed in the early 1900’s and owned by BMI..
                     </p>
+                    <hr>
+                    <h3><strong>Brimstone Office:</strong><span tel="406-287-8080"> 406-287-8080</span></h3>
+                    <h4>Physical Address:</h4>
+                    <address>
+                        375 Mayflower Mine Road <br> 
+                        Whitehall, MT 59759
+                    </address>
+                    <h4>Mailing Address:</h4>
+                    <address>
+                       Brimstone Mining Inc. <br> 
+                       PO Box 1029 <br> 
+                       Whitehall MT 59759
+                    </address>
                 </div>
 
             </div> <!-- /col -->
         </div> <!-- /grid -->
 
         <footer>
-
             <div class="logo"></div>
             <div class="copyright">
                 <p>©<?php echo date('Y'); ?> brimstone Mining, Inc.</p>
@@ -55,16 +64,16 @@
 
         <div id="mobilOverlay">
             <div class="grid">
-            <div class="col-1-1">
-            <div class="mobileContain">
-                <h2>Coming Soon</h2>
-                <hr>
-                <p>
-                    We are working hard to bring you a better mobile viewing experience.
-                    Please check back with us soon.
-                </p>
-            </div>
-            </div>
+                <div class="col-1-1">
+                    <div class="mobileContain">
+                        <h2>Coming Soon</h2>
+                        <hr>
+                        <p>
+                            We are working hard to bring you a better mobile viewing experience.
+                            Please check back with us soon.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
