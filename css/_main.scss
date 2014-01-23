@@ -556,12 +556,19 @@ label {
 }
 
 .subnav-contain > header {
-    background: url(/img/bkgd/shovel-axe.jpg) no-repeat 79px 14px;
+    background: url(/img/bkgd/pickaxe-graphic.svg) no-repeat 72px 6px;
     width: 220px;
     height: 80px;
+    background-size: 35%;
     color: white;
     line-height: 80px;
     text-align: center;
+}
+
+.no-svg .subnav-contain > header {
+    background: url(/img/bkgd/pickaxe-graphic.png) no-repeat 76px 14px;
+    width: 220px;
+    height: 80px;
 }
 
 .subnav-contain a.subnav {

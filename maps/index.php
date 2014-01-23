@@ -1,15 +1,15 @@
 <?php 
-    // title tag
+    require_once ('../includes/config.php');
     $title = 'Brimstone Maps | Brimstone Mining, Inc.';
+    include (ROOT_PATH . '/parts/_doctype.php');
 ?>
-<?php include '../parts/_doctype.php'; ?>
 
     <body id="maps-page">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
     
-        <?php include '../parts/_main-nav.php'; ?>
+        <?php include (ROOT_PATH . '/parts/_main-nav.php'); ?>
 
         <div class="subnav-contain">
             <header></header>
@@ -140,4 +140,4 @@
             </div>
         </div> <!-- /grid -->
 
-        <?php include '../parts/_footer.php'; ?>
+        <?php include (ROOT_PATH . '/parts/_footer.php'); ?>

@@ -1,8 +1,8 @@
 <?php 
-    // title tag
+    require_once ('includes/config.php');
     $title = 'Terms and Conditions | Brimstone Mining, Inc.';
+    include (ROOT_PATH . '/parts/_doctype.php');
 ?>
-<?php include 'parts/_doctype.php'; ?>
 
     <body>
         <!--[if lt IE 7]>
@@ -14,19 +14,6 @@
             <h1 class="home">
                 <a href="/" title="home">brimstone Mining, Inc.</a>
             </h1>
-          <!--   <nav>
-                <ul>
-                    <li>
-                        <a href="/mayflower-mine/">Mayflower Mine</a>
-                    </li>
-                    <li>
-                        <a href="/maps/">Maps</a>
-                    </li>
-                    <li>
-                        <a href="/press/">Press</a>
-                    </li>
-                </ul>
-            </nav> -->
         </header>
 
        
@@ -115,7 +102,7 @@
 
                       <!-- TERM AGREE FORM -->
 
-                <form name="form1" action="/intro/" method="#" onsubmit='return validate(this)'>
+                <form name="form1" action="/home/" method="#" onsubmit='return validate(this)'>
                   <p>
                     <input class="check" type="checkbox" name="agree" id="agree">
                     <label class="agree" for="agree">I Agree to the Terms and Conditions.</label>
@@ -136,20 +123,7 @@
             <div class="copyright">
                 <p>© <?php echo date('Y'); ?> brimstone Mining, Inc.</p>
             </div>
-           <!--  <nav>
-                <ul>
-                    <li>
-                        <a href="/mayflower-mine/">Mayflower Mine</a>
-                    </li>
-                    <li>
-                        <a href="/maps/">Maps</a>
-                    </li>
-                    <li>
-                        <a href="/press/">Press</a>
-                    </li>
-                </ul>
-            </nav> -->
-       
+           
         </footer>
 
 

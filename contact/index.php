@@ -1,15 +1,15 @@
-<?php 
-    // title tag
+<?php
+    require_once ('../includes/config.php'); 
     $title = 'Contact Us | Brimstone Mining, Inc.';
+    include (ROOT_PATH . '/parts/_doctype.php');
 ?>
-<?php include '../parts/_doctype.php'; ?>
 
     <body id="contact-page">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <?php include '../parts/_main-nav.php'; ?>
+        <?php include (ROOT_PATH . '/parts/_main-nav.php'); ?>
 
         <div class="grid footer-push">
             <div class="col-1-2">
@@ -43,4 +43,4 @@
         </div> <!-- /grid -->
 
         
-<?php include '../parts/_footer.php'; ?>
+<?php include (ROOT_PATH . '/parts/_footer.php'); ?>
