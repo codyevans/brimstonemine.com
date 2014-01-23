@@ -33,7 +33,7 @@
             </div> <!-- /col -->
 
             <div class="col-1-2">
-                <div class="contained-no-background">
+                <div class="contained-no-background" id="static-map">
                 <a href="https://maps.google.com/maps?q=Mayflowr+Mine,+Whitehall,+MT&hl=en&ll=45.793801,-112.001925&spn=0.029623,0.056434&sll=45.793831,-112.001806&sspn=0.003703,0.007054&t=h&hnear=Mayflower+Mine&z=15&iwloc=A" title="View in Google Maps">
                     <img src="http://maps.googleapis.com/maps/api/staticmap?&zoom=17&size=800x500&maptype=roadmap&markers=Mayflower+Mine+Whitehall,+MT+59759&sensor=false" alt="The Mayflower Mine, 375 Mayflower Mine Road Whitehall, MT 59759">
                 </a>
@@ -41,6 +41,6 @@
             </div> <!-- /col -->
 
         </div> <!-- /grid -->
-       
+
         
 <?php include '../parts/_footer.php'; ?>

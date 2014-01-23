@@ -11,7 +11,7 @@
 
         <?php include '../parts/_main-nav.php'; ?>
 
-         <div class="grid grid-pad">
+         <div class="grid grid-pad" id="home-page-content-load">
             <div class="col-1-2 push-right">
                    
                  <div class="contained">
@@ -27,12 +27,16 @@
                         375 Mayflower Mine Road <br> 
                         Whitehall, MT 59759
                     </address>
+                     <a id="home-page-map-link" href="https://maps.google.com/maps?q=Mayflowr+Mine,+Whitehall,+MT&hl=en&ll=45.793801,-112.001925&spn=0.029623,0.056434&sll=45.793831,-112.001806&sspn=0.003703,0.007054&t=h&hnear=Mayflower+Mine&z=15&iwloc=A" title="View in Google Maps">
+                        View in Google Maps
+                    </a>
                     <h4>Mailing Address:</h4>
                     <address>
                        Brimstone Mining Inc. <br> 
                        PO Box 1029 <br> 
                        Whitehall MT 59759
                     </address>
+                    
                 </div>
 
             </div> <!-- /col -->
