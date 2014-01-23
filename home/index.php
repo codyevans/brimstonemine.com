@@ -28,7 +28,7 @@
                         Whitehall, MT 59759
                     </address>
                      <a id="home-page-map-link" href="https://maps.google.com/maps?q=Mayflowr+Mine,+Whitehall,+MT&hl=en&ll=45.793801,-112.001925&spn=0.029623,0.056434&sll=45.793831,-112.001806&sspn=0.003703,0.007054&t=h&hnear=Mayflower+Mine&z=15&iwloc=A" title="View in Google Maps">
-                        View in Google Maps
+                        View in Google Maps &rarr;
                     </a>
                     <h4>Mailing Address:</h4>
                     <address>

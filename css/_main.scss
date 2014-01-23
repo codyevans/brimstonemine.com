@@ -309,14 +309,6 @@ header.top-header:after {
     clear: both;
 }
 
-// header.top-header .logo {
-//     width: 60px;
-//     height: 100%;
-//     background:  #afc064 url(/img/bkgd/logo.gif) no-repeat center center;
-//     float: left;
-//     margin-right: 15px;
-// }
-
 header.top-header .logo {
     width: 60px;
     height: 100%;
@@ -370,6 +362,23 @@ header.top-header nav ul li {
     float: left;
     margin-right: 25px;
 }
+
+// home page google map link
+#home-page-map-link {
+    text-decoration: none;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 14px;
+    padding: 6px 8px;
+    border-radius: 2px;
+    background:  #afc064;
+    color: white;
+    line-height: 46px;
+
+    &:hover, &:active {
+        background: darken(#afc064, 8%);
+    }
+}
+
 
 /* footer =================================================================== */
 

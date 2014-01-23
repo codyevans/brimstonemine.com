@@ -1,0 +1,8 @@
+
+1. add and optimize home page images
+
+3. replace terms page with updated graphic and disclaimer
+
+4. google authentication code - relink
+
+5. sitemap
