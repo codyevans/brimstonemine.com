@@ -42,7 +42,16 @@
         <script src="/js/build/production.min.js"></script>
         <?php
             if ($_SERVER['PHP_SELF'] == '/home/index.php') {
-                echo '<script>$.backstretch("/img/home/test.jpg");</script>';
+                
+                echo '<script>';
+                echo '$.backstretch([';
+                echo '"/img/home/four.jpg",';
+                echo '"/img/home/two.jpg",';
+                echo '"/img/home/one.jpg",';
+                echo '"/img/home/three.jpg"';
+                echo ' ], {duration: 3000, fade: 750});';
+                echo '</script>';
+            
             }
         ?>
 
