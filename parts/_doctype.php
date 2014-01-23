@@ -10,6 +10,8 @@
         <meta name="description" content="Brimstone Mining, Inc. The Mayflower Mine">
        <!--  <meta name="viewport" content="width=device-width"> -->
 
+        <meta name="google-site-verification" content="JDnlNrjHrKggQxbevSNKVc527NvBdIpKtdj9h99WlCA" />
+
         <link rel="stylesheet" href="/css/build/global.css">
 
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
